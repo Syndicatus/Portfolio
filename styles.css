@@ -1,0 +1,112 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 8%;
+
+    background-color: #3264C8;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    top: 0px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #03060c;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 90%;
+    text-align: right;
+}
+
+nav * {
+    align-self: right;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav button {
+    border: none;
+    background-color: inherit;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 400px;
+
+    width: 67%;
+    margin: auto;
+
+    position: relative;
+    top: calc(8% + 10px);
+}
+
+main div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 2px solid #3264C8;
+    text-align: center;
+
+    font-size: 2rem;
+    color: white;
+    background-color: #32c896;
+}
+
+main div button {
+    visibility: hidden;
+    width: 50%;
+    justify-self: flex-end;
+}
+
+main div span {
+    visibility: hidden;
+    width: 50%;
+    justify-self: flex-end;
+    font-size: 1.5rem;
+}
+
+main div:hover button {
+    visibility: visible;
+}
+
+main div:hover span {
+    visibility: visible;
+}
+
+body div {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+
+    position: relative;
+    top: calc(8% + 10px);
+}
+
+#Files {
+    width: 100%;
+    height: 10%;
+    top: 0px;
+}
+
+iframe {
+    height: 90%;
+    width: 100%;
+}
+
+#Contact * {
+    text-align: center;
+}

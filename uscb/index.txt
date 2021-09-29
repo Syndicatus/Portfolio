@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>USC B Project</title>
+		<link rel="stylesheet" href="styles.css">
+        <meta encoding="UTF-8">
+	</head>
+	<body>
+        <div class="main" id="CompInput">
+            <button>Desktop</button>
+            <button>Laptop HDMI</button>
+            <button>Laptop VGA</button>
+        </div>
+
+        <button class="display active" id="Comp">Computer</button>
+        <button class="display" id="Doc">Documents</button>
+        <button class="display" id="TVideo">TV & Video</button>
+        <button class="power" id="Power"><img src="images/800px-IEC5009_Standby_Symbol.svg.png"></button>
+        <div  id="Controls">
+            <button class="control" id="Volume"><img src="images/1024px-Speaker_Icon.svg.png"></button>
+            <button class="control" id="Light"><img src="images/Simpleicons_Interface_light-bulb-outline-1.svg.png"></button>
+            <button class="control" id="Theme"><img src="images/1024px-Speaker_Icon.svg.png"></button>   
+            <button class="control" id="Help">?</button>
+        </div>
+        <div id="ControlDisplay" hidden></div>
+    </body>
+</html>

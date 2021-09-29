@@ -1,0 +1,91 @@
+html {
+    background-color: #2d2d2e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    grid-area: Main;
+    background-color: #3a687a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main button {
+    width: 20%;
+    height: 60%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+	grid-template-columns: 2fr 2fr 2fr 1fr 5rem;
+	grid-template-rows: 1fr 1fr 5rem;
+    grid-template-areas: 'Main Main Main Main Controls'
+                        'Main Main Main Main Panel'
+                        'Computer Documents TVideo .  Power';
+}
+
+#Controls {
+    grid-area: Controls;
+    background-color: #75d0f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Controls button {
+    width: 80%;
+    height: 25%;
+    background-color: inherit;
+    border: none;
+}
+
+#Controls button:hover {
+    background-color: #3a687a;
+}
+
+.active {
+    background-color: #3a687a !important;
+}
+
+.display {
+    background-color: #0f213b;
+    color: #FFF;
+    
+    font-size: 2rem;
+}
+
+.display:hover {
+    background-color: #1e4276;
+}
+
+#Comp {
+    grid-area: Computer;
+}
+
+#Doc {
+    grid-area: Documents;
+}
+
+#TVideo {
+    grid-area: TVideo;
+}
+
+#Power {
+    grid-area: Power;
+    background-color: #75d0f4;
+    border: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
