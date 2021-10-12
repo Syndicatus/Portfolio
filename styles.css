@@ -19,6 +19,16 @@ header {
     width: 60px;
     border-radius: 50%;
     background-color: #03060c;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #03060c;
 }
 
 nav {
