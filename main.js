@@ -45,7 +45,7 @@ function visualizeCode (item) {
     for (each of data[item].files) {
         let file = document.createElement("button");
         if (Array.isArray(each)) {
-            file.innerText = each[0];
+            file.innerHTML = `<img src="./folder-grey.svg" /> ${each[0]}`;
             file.id = each[0];
             file.onclick = () => visualizeSubCode(file.id);
         } else {
