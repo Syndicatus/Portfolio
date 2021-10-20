@@ -8,6 +8,8 @@ const contact = document.getElementById("Contact");
 for (each in data) {
     let option = document.createElement("div");
     option.id = each;
+    option.style.backgroundImage = `url(${each}/Logo.png)`;
+    option.style.backgroundSize = "Cover";
 
     let title = document.createElement("h3");
     title.innerText = data[each].name;
