@@ -14,7 +14,9 @@ header {
 }
 
 .logo {
+    position: absolute;
     top: 0px;
+    left: 0px;
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -37,8 +39,10 @@ nav {
     align-items: center;
 
     height: 100%;
-    width: 90%;
     text-align: right;
+
+    position: absolute;
+    right: 0px;
 }
 
 nav * {
